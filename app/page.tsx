@@ -52,7 +52,7 @@ const projects = [
     title: "Movie Recommendation System",
     desc: "A content-based recommendation engine that suggests movies using metadata similarity and user preferences.",
     tech: ["Python", "Streamlit", "Pandas", "Scikit-Learn"],
-    link: "https://movie-recommendation-manish.streamlit.app",
+    link: "https://movie-recommendation-system247.streamlit.app",
     type: "Live Project",
   },
 
@@ -65,19 +65,11 @@ const projects = [
   },
 
   {
-    title: "Face Recognition Attendance",
-    desc: "A computer vision application that recognizes faces in real time and automatically records attendance.",
-    tech: ["Python", "OpenCV", "Pandas", "NumPy"],
-    link: "https://github.com/manishbisht247/face-recognition-attendance",
-    type: "Computer Vision",
-  },
-
-  {
-    title: "Decision Tree Dashboard",
-    desc: "An interactive machine learning dashboard for experimenting with Decision Tree hyperparameters and visualizing the resulting model.",
-    tech: ["Python", "Scikit-Learn", "Streamlit", "Data Visualization"],
-    link: "https://github.com/manishbisht247/decision-tree-dashboard",
-    type: "Interactive ML",
+    title: "Sales Analysis Dashboard",
+    desc: "An interactive Sales dashboard with KPI's required for Sales Analysis.",
+    tech: ["Python", "PowerBI", "Excel"],
+    link: "https://github.com/manishbisht247/Data-Analysis-Full-stack-project",
+    type: "Data Analysis",
   },
 ];
 
@@ -110,6 +102,7 @@ const skillCategories = [
       { name: "Scikit-Learn", icon: SiScikitlearn },
       { name: "Model Evaluation", icon: CheckCircle2 },
       { name: "Feature Analysis", icon: LineChart },
+      { name : "Hyperparameter Tuning", icon: ScatterChart}
     ],
   },
 
