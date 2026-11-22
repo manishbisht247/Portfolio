@@ -12,6 +12,7 @@ import {
   Brain,
   Database,
   LineChart,
+  ScatterChart,
   MessageSquareText,
   ArrowUpRight,
   CheckCircle2,
