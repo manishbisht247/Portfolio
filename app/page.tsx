@@ -154,10 +154,14 @@ const journey = [
 
 
 const certifications = [
-  "Kaggle Data Science Certifications",
-  "Data Science Professional Certificate",
-  "NPTEL: Privacy & Security",
-  "NPTEL: Leadership Effectiveness",
+  {
+    title: "Data Science Professional Certificate",
+    pdf: "/certificates/data-science-certificate.pdf",
+  },
+  {
+    title: "Leadership & Team Effectiveness",
+    pdf: "/certificates/leadership-team-effectiveness.pdf",
+  },
 ];
 
 
@@ -1117,24 +1121,33 @@ export default function Portfolio() {
 
             <div className="space-y-4">
 
-              {certifications.map((cert) => (
+              {certifications.map((certificate) => (
 
                 <MotionDiv
-                  key={cert}
+                  key={certificate.title}
                   whileHover={{ x: 6 }}
-                  className="flex items-center gap-4 p-5 rounded-2xl border border-slate-200 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-50 transition-all"
                 >
+                  <a
+                    href={certificate.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between gap-4 p-5 rounded-2xl border border-slate-200 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-50 transition-all"
+                  >
+                    <span className="flex items-center gap-4">
+                      <span className="p-2.5 rounded-xl bg-blue-50 text-blue-600">
+                        <Award size={20} />
+                      </span>
 
-                  <div className="p-2.5 rounded-xl bg-blue-50 text-blue-600">
+                      <span className="font-semibold text-slate-700">
+                        {certificate.title}
+                      </span>
+                    </span>
 
-                    <Award size={20} />
-
-                  </div>
-
-                  <span className="font-semibold text-slate-700">
-                    {cert}
-                  </span>
-
+                    <ArrowUpRight
+                      size={18}
+                      className="text-slate-400"
+                    />
+                  </a>
                 </MotionDiv>
 
               ))}
